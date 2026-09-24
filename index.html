@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============================================================== -->
+  <!-- CONFIGURAÇÕES DE SEO E CABEÇALHO DO SITE                       -->
+  <!-- ============================================================== -->
+
+  <!-- [COLE O NOME DO SEU PRODUTO OU SERVIÇO NO TÍTULO ABAIXO] -->
+  <title>Nome do Seu Produto ou Serviço — Transformação e Resultados Rápidos</title>
+
+  <!-- [COLE UMA PEQUENA DESCRIÇÃO DE 1 OU 2 FRASES PARA O GOOGLE ABAIXO] -->
+  <meta name="description"
+    content="Aprenda o método comprovado para alcançar seus objetivos de forma simples, prática e sem complicações. Descubra como começar hoje.">
+
+  <!-- Favicon (Ícone da aba do navegador) -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%232563eb'><path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/></svg>">
+
+  <!-- Fonte Inter (Google Fonts) para leitura moderna e profissional -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Tailwind CSS via CDN Oficial (dispensa instalações complexas no computador) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              500: '#3b82f6',
+              600: '#2563eb', // Cor Primária Principal (Azul Profissional)
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#0f172a', // Fundo Escuro Nobre
+            },
+            accent: {
+              500: '#10b981', // Verde de Sucesso / Conversão
+              600: '#059669',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Estilos auxiliares suaves */
+    .faq-answer {
+      transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    }
+  </style>
+</head>
+
+<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-brand-600 selection:text-white">
+
+  <!-- ============================================================== -->
+  <!-- BLOCO 01: BARRA DE AVISO SUPERIOR (URGÊNCIA / ANÚNCIO)        -->
+  <!-- ============================================================== -->
+  <aside id="aviso-topo" class="bg-brand-600 text-white text-xs sm:text-sm font-medium py-2 px-4 text-center">
+    <div class="max-w-6xl mx-auto flex items-center justify-center gap-2">
+      <span class="inline-block w-2 h-2 rounded-full bg-emerald-300 animate-pulse"></span>
+      <!-- [COLE SEU AVISO DE VAGAS OU CONDIÇÃO ESPECIAL ABAIXO] -->
+      <span>Condição de Lançamento: Garanta sua vaga com desconto especial por tempo limitado.</span>
+    </div>
+  </aside>
+
+  <!-- ============================================================== -->
+  <!-- NAVEGAÇÃO SUPERIOR (CABEÇALHO)                                 -->
+  <!-- ============================================================== -->
+  <header class="border-b border-slate-800 bg-slate-900/90 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
+      <a href="#inicio" class="flex items-center gap-3">
+        <!-- [COLE O NOME DA SUA MARCA OU LOGOTIPO ABAIXO] -->
+        <div class="w-10 h-10 rounded-xl bg-brand-600 flex items-center justify-center font-bold text-lg text-white">
+          S
+        </div>
+        <span class="font-extrabold text-lg sm:text-xl tracking-tight text-white">
+          Sua<span class="text-brand-500">Marca</span>
+        </span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#problema" class="hover:text-white transition">O Problema</a>
+        <a href="#solucao" class="hover:text-white transition">A Solução</a>
+        <a href="#conteudo" class="hover:text-white transition">O Que Recebe</a>
+        <a href="#depoimentos" class="hover:text-white transition">Depoimentos</a>
+        <a href="#faq" class="hover:text-white transition">Dúvidas</a>
+      </nav>
+
+      <a href="#oferta"
+        class="bg-brand-600 hover:bg-brand-500 text-white font-semibold text-xs sm:text-sm px-4 sm:px-6 py-2.5 rounded-xl shadow-lg shadow-brand-600/30 transition-all hover:scale-105 active:scale-95">
+        Garantir Acesso
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============================================================== -->
+    <!-- BLOCO 02: HERO SECTION (TOPO E PROMESSA PRINCIPAL)             -->
+    <!-- ============================================================== -->
+    <section id="inicio" class="relative pt-12 sm:pt-20 pb-16 sm:pb-24 overflow-hidden border-b border-slate-800">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
+
+        <!-- Selo de Categoria ou Destaque -->
+        <div
+          class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800 border border-slate-700 text-brand-400 text-xs sm:text-sm font-medium mb-6">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+          <!-- [COLE SUA CATEGORIA OU SELO ABAIXO] -->
+          <span>Método Prático e Direto ao Ponto</span>
+        </div>
+
+        <!-- [COLE SUA HEADLINE PRINCIPAL / TÍTULO MAGNÉTICO ABAIXO] -->
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white max-w-4xl mx-auto leading-tight sm:leading-none">
+          Pare de Perder Tempo com Tarefas Manuais e <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-brand-500 to-indigo-300">Multiplique Seus Resultados</span>
+        </h1>
+
+        <!-- [COLE SEU SUBTÍTULO OU RESUMO DA TRANSFORMAÇÃO ABAIXO] -->
+        <p class="mt-6 text-base sm:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
+          Um passo a passo completo, estruturado para quem não tem tempo a perder e precisa implementar processos que funcionam de verdade no dia a dia.
+        </p>
+
+        <!-- Botões de Ação do Hero -->
+        <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <!-- [COLE O LINK DO SEU CHECKOUT OU FORMULÁRIO NO HREF ABAIXO] -->
+          <a href="#oferta"
+            class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-base px-8 py-4 rounded-xl shadow-xl shadow-emerald-500/20 transition-all hover:scale-105 active:scale-95">
+            <span>Quero Começar Agora</span>
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+
+          <!-- [COLE O LINK DO SEU WHATSAPP OU VÍDEO NO HREF ABAIXO] -->
+          <a href="#solucao"
+            class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold text-base px-6 py-4 rounded-xl border border-slate-700 transition">
+            <span>Ver Como Funciona</span>
+          </a>
+        </div>
+
+        <!-- Micro Prova Social -->
+        <div class="mt-10 flex flex-wrap items-center justify-center gap-4 text-xs sm:text-sm text-slate-400">
+          <div class="flex -space-x-2 overflow-hidden">
+            <span class="inline-block h-8 w-8 rounded-full ring-2 ring-slate-900 bg-slate-700 flex items-center justify-center font-bold text-xs text-white">AJ</span>
+            <span class="inline-block h-8 w-8 rounded-full ring-2 ring-slate-900 bg-slate-600 flex items-center justify-center font-bold text-xs text-white">MD</span>
+            <span class="inline-block h-8 w-8 rounded-full ring-2 ring-slate-900 bg-slate-500 flex items-center justify-center font-bold text-xs text-white">CR</span>
+            <span class="inline-block h-8 w-8 rounded-full ring-2 ring-slate-900 bg-brand-600 flex items-center justify-center font-bold text-xs text-white">+</span>
+          </div>
+          <!-- [COLE SEU NÚMERO DE ALUNOS OU CLIENTES SATISFEITOS ABAIXO] -->
+          <span>Mais de <strong>1.500 alunos</strong> já transformaram sua rotina • Nota 4.9/5 estrelas</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- BLOCO 03: BARRA DE PROVA DE RECONHECIMENTO (LOGOS / MÍDIA)     -->
+    <!-- ============================================================== -->
+    <section id="marcas" class="py-10 bg-slate-950/60 border-b border-slate-800">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center">
+        <!-- [COLE O TÍTULO DA SEÇÃO DE PARCEIROS / RECONHECIMENTO ABAIXO] -->
+        <p class="text-xs uppercase tracking-widest text-slate-400 font-semibold mb-6">
+          Compatível e Integrado com as Principais Ferramentas do Mercado
+        </p>
+
+        <!-- Grade de Ícones/Logos (Substitua pelos nomes ou imagens dos seus parceiros) -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-6 items-center justify-center opacity-70">
+          <div class="text-slate-400 font-bold text-base tracking-wider">WHATSAPP</div>
+          <div class="text-slate-400 font-bold text-base tracking-wider">N8N</div>
+          <div class="text-slate-400 font-bold text-base tracking-wider">POSTGRESQL</div>
+          <div class="text-slate-400 font-bold text-base tracking-wider">GOOGLE SHEETS</div>
+          <div class="text-slate-400 font-bold text-base tracking-wider">MAKE</div>
+          <div class="text-slate-400 font-bold text-base tracking-wider">VERCEL</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- BLOCO 04: BLOCO DA DOR / PROBLEMA (IDENTIFICAÇÃO DO PÚBLICO)   -->
+    <!-- ============================================================== -->
+    <section id="problema" class="py-16 sm:py-24 border-b border-slate-800">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="text-red-400 font-semibold text-xs sm:text-sm tracking-wider uppercase">Você se identifica?</span>
+          <!-- [COLE O TÍTULO DA DOR DO SEU CLIENTE ABAIXO] -->
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-2">
+            A Sensação Constante de Trabalhar Muito e Não Ver o Negócio Andar
+          </h2>
+          <!-- [COLE A EXPLICAÇÃO DO PROBLEMA ABAIXO] -->
+          <p class="text-slate-400 mt-4 text-base sm:text-lg">
+            A maioria dos profissionais gasta até 70% do seu dia preso em atividades manuais, repetitivas e estressantes.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Card de Dor 1 -->
+          <div class="p-8 rounded-2xl bg-slate-800/60 border border-slate-700/60">
+            <div class="w-12 h-12 rounded-xl bg-red-500/10 text-red-400 flex items-center justify-center font-bold text-xl mb-6">
+              01
+            </div>
+            <!-- [DOR 1 - TÍTULO E DESCRIÇÃO] -->
+            <h3 class="text-xl font-bold text-white mb-3">Retrabalho Constante</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Copiar e colar dados de um lugar para o outro, responder sempre as mesmas mensagens e perder prazos importantes por falta de organização.
+            </p>
+          </div>
+
+          <!-- Card de Dor 2 -->
+          <div class="p-8 rounded-2xl bg-slate-800/60 border border-slate-700/60">
+            <div class="w-12 h-12 rounded-xl bg-red-500/10 text-red-400 flex items-center justify-center font-bold text-xl mb-6">
+              02
+            </div>
+            <!-- [DOR 2 - TÍTULO E DESCRIÇÃO] -->
+            <h3 class="text-xl font-bold text-white mb-3">Complexidade Excessiva</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Tutoriais confusos na internet cheios de termos técnicos difíceis que parecem exigir uma faculdade de programação só para começar.
+            </p>
+          </div>
+
+          <!-- Card de Dor 3 -->
+          <div class="p-8 rounded-2xl bg-slate-800/60 border border-slate-700/60">
+            <div class="w-12 h-12 rounded-xl bg-red-500/10 text-red-400 flex items-center justify-center font-bold text-xl mb-6">
+              03
+            </div>
+            <!-- [DOR 3 - TÍTULO E DESCRIÇÃO] -->
+            <h3 class="text-xl font-bold text-white mb-3">Falta de Liberdade</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Ficar preso ao computador sem conseguir tirar férias ou focar no que realmente gera receita e crescimento para sua carreira ou empresa.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- BLOCO 05: APRESENTAÇÃO DA SOLUÇÃO / MECANISMO ÚNICO            -->
+    <!-- ============================================================== -->
+    <section id="solucao" class="py-16 sm:py-24 bg-slate-950/40 border-b border-slate-800">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <span class="text-brand-400 font-semibold text-xs sm:text-sm tracking-wider uppercase">A Virada de Chave</span>
+            <!-- [COLE O TÍTULO DA SUA SOLUÇÃO ABAIXO] -->
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-2 leading-tight">
+              Um Método Desenhado para Quem Precisa de Resultados Sem Perder Tempo
+            </h2>
+            <!-- [COLE A DESCRIÇÃO DO SEU MÉTODO ABAIXO] -->
+            <p class="text-slate-300 mt-6 text-base sm:text-lg leading-relaxed">
+              Em vez de perder semanas tentando adivinhar como juntar peças soltas, você terá acesso a um caminho testado, passo a passo, onde basta seguir os comandos para ter tudo funcionando.
+            </p>
+
+            <ul class="mt-8 space-y-4">
+              <li class="flex items-start gap-3">
+                <div class="mt-1 w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center flex-shrink-0">
+                  ✓
+                </div>
+                <!-- [BENEFÍCIO 1] -->
+                <span class="text-slate-300 text-sm sm:text-base">Modelos prontos para copiar, colar e colocar em produção no mesmo dia.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="mt-1 w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center flex-shrink-0">
+                  ✓
+                </div>
+                <!-- [BENEFÍCIO 2] -->
+                <span class="text-slate-300 text-sm sm:text-base">Linguagem 100% amigável, sem jargões desnecessários ou código complexo.</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="mt-1 w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center flex-shrink-0">
+                  ✓
+                </div>
+                <!-- [BENEFÍCIO 3] -->
+                <span class="text-slate-300 text-sm sm:text-base">Suporte dedicado para garantir que você não fique travado em nenhuma etapa.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Caixa Ilustrativa de Transformação -->
+          <div class="p-8 rounded-3xl bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 shadow-2xl relative">
+            <div class="absolute -top-3 -right-3 bg-brand-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+              100% Prático
+            </div>
+            <h3 class="text-lg font-bold text-white mb-4">Como funciona a jornada:</h3>
+            <div class="space-y-4 text-sm">
+              <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center gap-4">
+                <div class="w-8 h-8 rounded-lg bg-brand-500 text-white font-bold flex items-center justify-center">1</div>
+                <div>
+                  <h4 class="font-semibold text-white">Etapa 1: Ativação Rápida</h4>
+                  <p class="text-slate-400 text-xs">Você clica no botão, instala em 1 clique e já vê seu ambiente pronto.</p>
+                </div>
+              </div>
+              <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center gap-4">
+                <div class="w-8 h-8 rounded-lg bg-brand-500 text-white font-bold flex items-center justify-center">2</div>
+                <div>
+                  <h4 class="font-semibold text-white">Etapa 2: Personalização Simples</h4>
+                  <p class="text-slate-400 text-xs">Altera apenas os textos e os links do seu jeito com o assistente.</p>
+                </div>
+              </div>
+              <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center gap-4">
+                <div class="w-8 h-8 rounded-lg bg-emerald-500 text-slate-950 font-bold flex items-center justify-center">3</div>
+                <div>
+                  <h4 class="font-semibold text-white">Etapa 3: Publicação Instantânea</h4>
+                  <p class="text-slate-400 text-xs">Seu projeto está no ar, recebendo clientes e gerando retorno.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- BLOCO 06: O QUE VOCÊ RECEBE / MÓDULOS E ENTREGÁVEIS            -->
+    <!-- ============================================================== -->
+    <section id="conteudo" class="py-16 sm:py-24 border-b border-slate-800">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="text-brand-400 font-semibold text-xs sm:text-sm tracking-wider uppercase">Conteúdo Detalhado</span>
+          <!-- [COLE O TÍTULO DOS SEUS MÓDULOS ABAIXO] -->
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-2">
+            Tudo o Que Está Incluso no Seu Acesso
+          </h2>
+          <!-- [COLE O SUBTÍTULO DOS ENTREGÁVEIS ABAIXO] -->
+          <p class="text-slate-400 mt-4 text-base sm:text-lg">
+            Um ecossistema completo para acelerar seus passos desde o primeiro dia.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Card de Conteúdo 1 -->
+          <div class="p-6 rounded-2xl bg-slate-800/40 border border-slate-700 hover:border-slate-600 transition">
+            <span class="text-xs font-bold text-brand-400 uppercase tracking-wider">Módulo 01</span>
+            <h3 class="text-lg font-bold text-white mt-2 mb-2">Fundamentos e Setup Imediato</h3>
+            <p class="text-slate-400 text-sm">Como preparar seu projeto em minutos sem instalar programas pesados ou comandos difíceis.</p>
+          </div>
+
+          <!-- Card de Conteúdo 2 -->
+          <div class="p-6 rounded-2xl bg-slate-800/40 border border-slate-700 hover:border-slate-600 transition">
+            <span class="text-xs font-bold text-brand-400 uppercase tracking-wider">Módulo 02</span>
+            <h3 class="text-lg font-bold text-white mt-2 mb-2">Templates de Alta Conversão</h3>
+            <p class="text-slate-400 text-sm">Acesso a modelos validados de páginas desenhadas para transformar visitantes comuns em clientes pagantes.</p>
+          </div>
+
+          <!-- Card de Conteúdo 3 -->
+          <div class="p-6 rounded-2xl bg-slate-800/40 border border-slate-700 hover:border-slate-600 transition">
+            <span class="text-xs font-bold text-brand-400 uppercase tracking-wider">Módulo 03</span>
+            <h3 class="text-lg font-bold text-white mt-2 mb-2">Integração de Mensagens e WhatsApp</h3>
+            <p class="text-slate-400 text-sm">Conecte seus formulários diretamente ao seu WhatsApp ou sistema de e-mail de forma automática.</p>
+          </div>
+
+          <!-- Card de Conteúdo 4 -->
+          <div class="p-6 rounded-2xl bg-slate-800/40 border border-slate-700 hover:border-slate-600 transition">
+            <span class="text-xs font-bold text-brand-400 uppercase tracking-wider">Módulo 04</span>
+            <h3 class="text-lg font-bold text-white mt-2 mb-2">Fluxos de Automação Pronta</h3>
+            <p class="text-slate-400 text-sm">Arquivos pré-configurados para importar e rodar sem precisar desenhar nada do zero.</p>
+          </div>
+
+          <!-- Card de Conteúdo 5 -->
+          <div class="p-6 rounded-2xl bg-slate-800/40 border border-slate-700 hover:border-slate-600 transition">
+            <span class="text-xs font-bold text-brand-400 uppercase tracking-wider">Módulo 05</span>
+            <h3 class="text-lg font-bold text-white mt-2 mb-2">Checklists de Publicação e Segurança</h3>
+            <p class="text-slate-400 text-sm">Garantia de que sua página carregará com máxima velocidade e proteção completa dos dados.</p>
+          </div>
+
+          <!-- Card de Conteúdo 6 -->
+          <div class="p-6 rounded-2xl bg-slate-800/40 border border-slate-700 hover:border-slate-600 transition">
+            <span class="text-xs font-bold text-brand-400 uppercase tracking-wider">Módulo 06</span>
+            <h3 class="text-lg font-bold text-white mt-2 mb-2">Comunidade e Suporte Contínuo</h3>
+            <p class="text-slate-400 text-sm">Canal direto para tirar dúvidas, receber feedbacks e acompanhar atualizações periódicas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- BLOCO 07: DEMONSTRAÇÃO VISUAL / MOCKUP DO PRODUTO             -->
+    <!-- ============================================================== -->
+    <section id="demonstracao" class="py-16 sm:py-24 bg-slate-950/60 border-b border-slate-800">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
+        <span class="text-brand-400 font-semibold text-xs sm:text-sm tracking-wider uppercase">Visualização Real</span>
+        <!-- [COLE O TÍTULO DO MOCKUP ABAIXO] -->
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-2 mb-4">
+          Veja a Estrutura em Ação
+        </h2>
+        <p class="text-slate-400 text-base max-w-2xl mx-auto mb-10">
+          Uma interface moderna, veloz e otimizada tanto para telas de celulares quanto para computadores.
+        </p>
+
+        <!-- Moldura de Mockup de Tela -->
+        <div class="rounded-2xl border border-slate-700 bg-slate-900 shadow-2xl p-4 sm:p-6 text-left">
+          <div class="flex items-center gap-2 mb-4 pb-3 border-b border-slate-800">
+            <span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span>
+            <span class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"></span>
+            <span class="w-3 h-3 rounded-full bg-emerald-500/80 inline-block"></span>
+            <span class="text-xs text-slate-500 ml-2 font-mono">https://seusite.com.br</span>
+          </div>
+          <div class="bg-slate-950 rounded-xl p-8 border border-slate-800 text-center">
+            <div class="max-w-md mx-auto py-8">
+              <div class="w-16 h-16 rounded-2xl bg-brand-600/20 text-brand-400 mx-auto flex items-center justify-center font-bold text-2xl mb-4">
+                ★
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2">Seu Produto Pronto Para Vender</h3>
+              <p class="text-slate-400 text-sm">
+                Toda a estrutura foi pensada para guiar os olhos do visitante direto para o botão de compra.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- BLOCO 08: DEPOIMENTOS E PROVAS SOCIAIS                         -->
+    <!-- ============================================================== -->
+    <section id="depoimentos" class="py-16 sm:py-24 border-b border-slate-800">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="text-brand-400 font-semibold text-xs sm:text-sm tracking-wider uppercase">Resultados Reais</span>
+          <!-- [COLE O TÍTULO DOS DEPOIMENTOS ABAIXO] -->
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-2">
+            O Que Nossos Alunos e Clientes Dizem
+          </h2>
+          <p class="text-slate-400 mt-4 text-base">
+            Histórias reais de quem aplicou o método e transformou sua operação.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Depoimento 1 -->
+          <div class="p-8 rounded-2xl bg-slate-800/50 border border-slate-700/80 flex flex-col justify-between">
+            <div>
+              <div class="text-yellow-400 text-sm mb-4">★★★★★</div>
+              <!-- [COLE O TEXTO DO DEPOIMENTO 1] -->
+              <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                "Eu não sabia nada de tecnologia e consegui colocar minha página no ar no mesmo dia. As explicações são incrivelmente fáceis de acompanhar."
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-700/60">
+              <div class="w-10 h-10 rounded-full bg-brand-600 flex items-center justify-center font-bold text-sm text-white">
+                ML
+              </div>
+              <div>
+                <!-- [NOME E CARGO DO DEPOIMENTO 1] -->
+                <h3 class="font-bold text-white text-sm">Mariana Lima</h3>
+                <p class="text-slate-400 text-xs">Consultora de Negócios</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Depoimento 2 -->
+          <div class="p-8 rounded-2xl bg-slate-800/50 border border-slate-700/80 flex flex-col justify-between">
+            <div>
+              <div class="text-yellow-400 text-sm mb-4">★★★★★</div>
+              <!-- [COLE O TEXTO DO DEPOIMENTO 2] -->
+              <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                "O assistente do Antigravity fez tudo parecer mágica. Eu pedi para mudar o texto e ele já subiu a atualização sozinho. Impressionante!"
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-700/60">
+              <div class="w-10 h-10 rounded-full bg-emerald-600 flex items-center justify-center font-bold text-sm text-white">
+                RS
+              </div>
+              <div>
+                <!-- [NOME E CARGO DO DEPOIMENTO 2] -->
+                <h3 class="font-bold text-white text-sm">Rodrigo Santos</h3>
+                <p class="text-slate-400 text-xs">Empreendedor Digital</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Depoimento 3 -->
+          <div class="p-8 rounded-2xl bg-slate-800/50 border border-slate-700/80 flex flex-col justify-between">
+            <div>
+              <div class="text-yellow-400 text-sm mb-4">★★★★★</div>
+              <!-- [COLE O TEXTO DO DEPOIMENTO 3] -->
+              <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                "Economizei pelo menos R$ 2.500 que gastaria contratando uma agência para fazer essa página. O template é limpo, leve e converte muito."
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-700/60">
+              <div class="w-10 h-10 rounded-full bg-indigo-600 flex items-center justify-center font-bold text-sm text-white">
+                CF
+              </div>
+              <div>
+                <!-- [NOME E CARGO DO DEPOIMENTO 3] -->
+                <h3 class="font-bold text-white text-sm">Camila Farias</h3>
+                <p class="text-slate-400 text-xs">Gestora de Projetos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- BLOCO 09: SEÇÃO DE BÔNUS EXCLUSIVOS                            -->
+    <!-- ============================================================== -->
+    <section id="bonus" class="py-16 sm:py-24 bg-slate-950/40 border-b border-slate-800">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="text-brand-400 font-semibold text-xs sm:text-sm tracking-wider uppercase">Presentes Especiais</span>
+          <!-- [COLE O TÍTULO DA SEÇÃO DE BÔNUS ABAIXO] -->
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-2">
+            Bônus Exclusivos Para Quem Entrar Hoje
+          </h2>
+          <p class="text-slate-400 mt-4 text-base">
+            Materiais adicionais selecionados para acelerar os seus resultados.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Bônus 1 -->
+          <div class="p-8 rounded-2xl bg-slate-900 border border-slate-700/80 relative">
+            <span class="inline-block px-3 py-1 rounded-full bg-brand-600/20 text-brand-400 text-xs font-bold mb-4 uppercase">
+              Bônus #1
+            </span>
+            <!-- [TÍTULO E DESCRIÇÃO DO BÔNUS 1] -->
+            <h3 class="text-xl font-bold text-white mb-2">Pack de Automações no n8n</h3>
+            <p class="text-slate-400 text-sm mb-6">
+              Fluxos pré-construídos para envio de mensagens, lembretes de agendamento e alertas instantâneos.
+            </p>
+            <div class="pt-4 border-t border-slate-800 text-xs font-semibold text-slate-400">
+              Valor Individual: <span class="line-through text-slate-500">R$ 197,00</span> • <span class="text-emerald-400">GRÁTIS</span>
+            </div>
+          </div>
+
+          <!-- Bônus 2 -->
+          <div class="p-8 rounded-2xl bg-slate-900 border border-slate-700/80 relative">
+            <span class="inline-block px-3 py-1 rounded-full bg-brand-600/20 text-brand-400 text-xs font-bold mb-4 uppercase">
+              Bônus #2
+            </span>
+            <!-- [TÍTULO E DESCRIÇÃO DO BÔNUS 2] -->
+            <h3 class="text-xl font-bold text-white mb-2">Guia de Redação para Conversão</h3>
+            <p class="text-slate-400 text-sm mb-6">
+              Modelos de textos prontos para títulos, argumentos de venda e chamadas para ação que atraem cliques.
+            </p>
+            <div class="pt-4 border-t border-slate-800 text-xs font-semibold text-slate-400">
+              Valor Individual: <span class="line-through text-slate-500">R$ 147,00</span> • <span class="text-emerald-400">GRÁTIS</span>
+            </div>
+          </div>
+
+          <!-- Bônus 3 -->
+          <div class="p-8 rounded-2xl bg-slate-900 border border-slate-700/80 relative">
+            <span class="inline-block px-3 py-1 rounded-full bg-brand-600/20 text-brand-400 text-xs font-bold mb-4 uppercase">
+              Bônus #3
+            </span>
+            <!-- [TÍTULO E DESCRIÇÃO DO BÔNUS 3] -->
+            <h3 class="text-xl font-bold text-white mb-2">Sessão Mensal de Dúvidas ao Vivo</h3>
+            <p class="text-slate-400 text-sm mb-6">
+              Encontros periódicos em sala digital para revisar projetos e tirar dúvidas direto com o instrutor.
+            </p>
+            <div class="pt-4 border-t border-slate-800 text-xs font-semibold text-slate-400">
+              Valor Individual: <span class="line-through text-slate-500">R$ 297,00</span> • <span class="text-emerald-400">GRÁTIS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- BLOCO 10: OFERTA PRINCIPAL / TABELA DE PREÇO (STACK DE VALOR)  -->
+    <!-- ============================================================== -->
+    <section id="oferta" class="py-16 sm:py-24 border-b border-slate-800 relative">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        
+        <div class="rounded-3xl bg-slate-900 border-2 border-brand-500/80 shadow-2xl p-8 sm:p-12 relative overflow-hidden">
+          <div class="absolute top-0 right-0 bg-brand-600 text-white text-xs font-bold px-6 py-2 rounded-bl-2xl uppercase tracking-wider">
+            Oportunidade Especial
+          </div>
+
+          <div class="text-center max-w-2xl mx-auto mb-8">
+            <span class="text-emerald-400 font-bold text-xs uppercase tracking-widest">Acesso Imediato</span>
+            <!-- [COLE O NOME DA SUA OFERTA ABAIXO] -->
+            <h2 class="text-2xl sm:text-4xl font-black text-white mt-1">
+              Garanta Sua Vaga no Treinamento Completo
+            </h2>
+            <p class="text-slate-400 text-sm sm:text-base mt-2">
+              Tudo o que você precisa para dominar a ferramenta e colocar seu projeto no ar hoje mesmo.
+            </p>
+          </div>
+
+          <!-- Resumo do que está incluso -->
+          <div class="bg-slate-950/70 rounded-2xl p-6 mb-8 border border-slate-800">
+            <h3 class="text-sm font-bold text-slate-300 uppercase tracking-wider mb-4">Veja tudo o que você recebe:</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-300">
+              <div class="flex items-center gap-2">
+                <span class="text-emerald-400 font-bold">✓</span> Acesso completo aos 6 módulos
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-emerald-400 font-bold">✓</span> Template estático de alta conversão
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-emerald-400 font-bold">✓</span> Bônus #1: Pack de Automações n8n
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-emerald-400 font-bold">✓</span> Bônus #2: Guia de Redação
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-emerald-400 font-bold">✓</span> Bônus #3: Sessões ao Vivo de Dúvidas
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-emerald-400 font-bold">✓</span> Certificado de aperfeiçoamento
+              </div>
+            </div>
+          </div>
+
+          <!-- Caixa de Preço e Ancoragem -->
+          <div class="text-center">
+            <!-- [COLE O VALOR CHEIO / ANCORAGEM ABAIXO] -->
+            <p class="text-sm text-slate-400">
+              Valor oficial de matrícula: <span class="line-through text-slate-500">R$ 297,00</span>
+            </p>
+
+            <div class="mt-2 mb-4">
+              <span class="text-xs text-slate-400 block uppercase tracking-wider">Sua condição especial hoje por apenas:</span>
+              <!-- [COLE O VALOR PROMOCIONAL PARCELADO OU À VISTA ABAIXO] -->
+              <div class="text-4xl sm:text-6xl font-black text-white mt-1">
+                <span class="text-xl sm:text-2xl font-bold text-slate-400">12x de </span>R$ 9,74
+              </div>
+              <span class="text-sm text-slate-400 block mt-1">ou R$ 97,00 à vista</span>
+            </div>
+
+            <!-- [COLE O LINK DO SEU CHECKOUT NO HREF ABAIXO] -->
+            <a href="https://pay.hotmart.com/SEU_CHECKOUT_AQUI"
+              class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-lg px-10 py-5 rounded-2xl shadow-xl shadow-emerald-500/25 transition-all hover:scale-105 active:scale-95">
+              <span>QUERO GARANTIR MINHA VAGA AGORA</span>
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+
+            <!-- Selos de Segurança -->
+            <div class="mt-6 flex flex-wrap items-center justify-center gap-6 text-xs text-slate-400">
+              <span class="flex items-center gap-1">🔒 Pagamento 100% Seguro</span>
+              <span class="flex items-center gap-1">⚡ Acesso Imediato</span>
+              <span class="flex items-center gap-1">🛡️ Garantia Incondicional</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- BLOCO 11: BLOCO DE GARANTIA INCONDICIONAL                      -->
+    <!-- ============================================================== -->
+    <section id="garantia" class="py-16 sm:py-24 border-b border-slate-800 bg-slate-950/60">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        <div class="p-8 sm:p-10 rounded-3xl bg-slate-900 border border-slate-800 flex flex-col md:flex-row items-center gap-8">
+          <div class="w-24 h-24 rounded-2xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-black text-4xl flex-shrink-0 border border-emerald-500/30">
+            🛡️
+          </div>
+          <div>
+            <span class="text-emerald-400 text-xs font-bold uppercase tracking-widest">Risco Zero Para Você</span>
+            <!-- [COLE SEU TÍTULO DE GARANTIA ABAIXO] -->
+            <h2 class="text-xl sm:text-2xl font-bold text-white mt-1 mb-3">
+              Garantia Incondicional de 7 Dias
+            </h2>
+            <!-- [COLE O TEXTO DA SUA GARANTIA ABAIXO] -->
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Você pode entrar, acessar todos os módulos, baixar os templates e testar o método na prática. Se por qualquer motivo você achar que o treinamento não é para você, basta solicitar o reembolso que devolveremos 100% do valor pago, sem burocracia.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- BLOCO 12: QUEM É O ESPECIALISTA / SOBRE O AUTOR                -->
+    <!-- ============================================================== -->
+    <section id="autor" class="py-16 sm:py-24 border-b border-slate-800">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        <div class="flex flex-col md:flex-row items-center gap-10">
+          <!-- Foto do Especialista -->
+          <div class="w-44 h-44 sm:w-52 sm:h-52 rounded-3xl bg-slate-800 border-2 border-brand-500/50 flex-shrink-0 overflow-hidden relative shadow-xl">
+            <!-- [COLE O LINK DA SUA FOTO OU DEIXE ESTE AVATAR INICIAL] -->
+            <img src="assets/logo-blue.png" alt="Foto do Especialista" class="w-full h-full object-cover">
+          </div>
+
+          <div>
+            <span class="text-brand-400 text-xs font-bold uppercase tracking-widest">Quem Vai Te Acompanhar</span>
+            <!-- [COLE O NOME DO ESPECIALISTA / AUTOR ABAIXO] -->
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1 mb-2">
+              Professor e Mentor Alexandre
+            </h2>
+            <p class="text-slate-400 text-sm font-medium mb-4">Especialista em Automação de Processos e Ferramentas Digitais</p>
+            <!-- [COLE A MINI-BIO DO AUTOR ABAIXO] -->
+            <p class="text-slate-300 text-sm leading-relaxed mb-4">
+              Com mais de 10 anos de experiência simplificando a tecnologia para pequenos e médios empresários, já ajudou centenas de profissionais a automatizarem rotinas cansativas e conquistarem autonomia digital.
+            </p>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Sua missão é ensinar tecnologia com clareza, empatia e sem jargões complicados, permitindo que qualquer pessoa consiga criar soluções reais do zero.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- BLOCO 13: PERGUNTAS FREQUENTES (FAQ ACORDEÃO INTERATIVO)        -->
+    <!-- ============================================================== -->
+    <section id="faq" class="py-16 sm:py-24 border-b border-slate-800 bg-slate-950/40">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="text-brand-400 font-semibold text-xs sm:text-sm tracking-wider uppercase">Tire Suas Dúvidas</span>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-2">
+            Perguntas Frequentes
+          </h2>
+          <p class="text-slate-400 mt-2 text-sm sm:text-base">
+            As respostas para as dúvidas mais comuns sobre o acesso e o funcionamento.
+          </p>
+        </div>
+
+        <div class="space-y-4" id="faq-container">
+          <!-- Pergunta 1 -->
+          <div class="rounded-2xl bg-slate-800/60 border border-slate-700/80 overflow-hidden">
+            <button class="faq-btn w-full p-6 text-left flex items-center justify-between gap-4 font-bold text-white text-base sm:text-lg focus:outline-none">
+              <!-- [COLE A PERGUNTA 1 ABAIXO] -->
+              <span>Preciso ter conhecimento prévio em programação para começar?</span>
+              <span class="faq-icon text-brand-400 text-xl font-mono transition-transform duration-200">+</span>
+            </button>
+            <div class="faq-answer hidden px-6 pb-6 text-slate-300 text-sm leading-relaxed border-t border-slate-700/40 pt-4">
+              <!-- [COLE A RESPOSTA 1 ABAIXO] -->
+              Não. O treinamento foi estruturado especificamente para leigos absolutos. Todo o processo é explicado no estilo "clique a clique", sem códigos difíceis.
+            </div>
+          </div>
+
+          <!-- Pergunta 2 -->
+          <div class="rounded-2xl bg-slate-800/60 border border-slate-700/80 overflow-hidden">
+            <button class="faq-btn w-full p-6 text-left flex items-center justify-between gap-4 font-bold text-white text-base sm:text-lg focus:outline-none">
+              <!-- [COLE A PERGUNTA 2 ABAIXO] -->
+              <span>Como recebo o acesso ao material e aos templates?</span>
+              <span class="faq-icon text-brand-400 text-xl font-mono transition-transform duration-200">+</span>
+            </button>
+            <div class="faq-answer hidden px-6 pb-6 text-slate-300 text-sm leading-relaxed border-t border-slate-700/40 pt-4">
+              <!-- [COLE A RESPOSTA 2 ABAIXO] -->
+              Assim que o seu pagamento for aprovado, você recebe um e-mail com os dados de login imediatos e as instruções para baixar todos os arquivos em um único clique.
+            </div>
+          </div>
+
+          <!-- Pergunta 3 -->
+          <div class="rounded-2xl bg-slate-800/60 border border-slate-700/80 overflow-hidden">
+            <button class="faq-btn w-full p-6 text-left flex items-center justify-between gap-4 font-bold text-white text-base sm:text-lg focus:outline-none">
+              <!-- [COLE A PERGUNTA 3 ABAIXO] -->
+              <span>Funciona tanto no Windows quanto no computador Mac?</span>
+              <span class="faq-icon text-brand-400 text-xl font-mono transition-transform duration-200">+</span>
+            </button>
+            <div class="faq-answer hidden px-6 pb-6 text-slate-300 text-sm leading-relaxed border-t border-slate-700/40 pt-4">
+              <!-- [COLE A RESPOSTA 3 ABAIXO] -->
+              Sim! Disponibilizamos instaladores prontos tanto para Windows (.bat) quanto para Mac (.command), garantindo que funcione perfeitamente em qualquer sistema.
+            </div>
+          </div>
+
+          <!-- Pergunta 4 -->
+          <div class="rounded-2xl bg-slate-800/60 border border-slate-700/80 overflow-hidden">
+            <button class="faq-btn w-full p-6 text-left flex items-center justify-between gap-4 font-bold text-white text-base sm:text-lg focus:outline-none">
+              <!-- [COLE A PERGUNTA 4 ABAIXO] -->
+              <span>Por quanto tempo terei acesso ao treinamento?</span>
+              <span class="faq-icon text-brand-400 text-xl font-mono transition-transform duration-200">+</span>
+            </button>
+            <div class="faq-answer hidden px-6 pb-6 text-slate-300 text-sm leading-relaxed border-t border-slate-700/40 pt-4">
+              <!-- [COLE A RESPOSTA 4 ABAIXO] -->
+              O seu acesso é válido por 1 ano completo, incluindo todas as atualizações de conteúdo e melhorias nos templates que forem adicionadas ao longo desse período.
+            </div>
+          </div>
+
+          <!-- Pergunta 5 -->
+          <div class="rounded-2xl bg-slate-800/60 border border-slate-700/80 overflow-hidden">
+            <button class="faq-btn w-full p-6 text-left flex items-center justify-between gap-4 font-bold text-white text-base sm:text-lg focus:outline-none">
+              <!-- [COLE A PERGUNTA 5 ABAIXO] -->
+              <span>E se eu tiver dúvidas durante as aulas?</span>
+              <span class="faq-icon text-brand-400 text-xl font-mono transition-transform duration-200">+</span>
+            </button>
+            <div class="faq-answer hidden px-6 pb-6 text-slate-300 text-sm leading-relaxed border-t border-slate-700/40 pt-4">
+              <!-- [COLE A RESPOSTA 5 ABAIXO] -->
+              Você conta com nossa equipe de suporte na área de membros e com o grupo de alunos no WhatsApp para tirar dúvidas e receber orientações diretamente.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- BLOCO 14: FORMULÁRIO DE CAPTURA COM ENVIO PARA WEBHOOK         -->
+    <!-- ============================================================== -->
+    <section id="contato" class="py-16 sm:py-24 border-b border-slate-800">
+      <div class="max-w-xl mx-auto px-4 sm:px-6">
+        <div class="p-8 sm:p-10 rounded-3xl bg-slate-900 border border-slate-800 shadow-xl">
+          <div class="text-center mb-8">
+            <span class="text-brand-400 text-xs font-bold uppercase tracking-widest">Fale Conosco</span>
+            <!-- [COLE O TÍTULO DO SEU FORMULÁRIO ABAIXO] -->
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">
+              Quer Saber Mais? Envie Sua Mensagem
+            </h2>
+            <p class="text-slate-400 text-xs sm:text-sm mt-2">
+              Preencha os campos abaixo para receber nosso contato direto pelo WhatsApp ou e-mail.
+            </p>
+          </div>
+
+          <!-- Formulário Assíncrono com Disparo para Webhook -->
+          <form id="lead-form" class="space-y-4">
+            <div>
+              <label for="lead-name" class="block text-xs font-semibold text-slate-300 mb-1">Seu Nome Completo</label>
+              <input type="text" id="lead-name" name="name" required placeholder="Ex: Maria da Silva"
+                class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-brand-500 text-sm">
+            </div>
+
+            <div>
+              <label for="lead-email" class="block text-xs font-semibold text-slate-300 mb-1">Seu Melhor E-mail</label>
+              <input type="email" id="lead-email" name="email" required placeholder="Ex: seuemail@exemplo.com"
+                class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-brand-500 text-sm">
+            </div>
+
+            <div>
+              <label for="lead-phone" class="block text-xs font-semibold text-slate-300 mb-1">Seu WhatsApp com DDD</label>
+              <input type="tel" id="lead-phone" name="phone" required placeholder="Ex: (11) 99999-8888"
+                class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-brand-500 text-sm">
+            </div>
+
+            <div>
+              <label for="lead-message" class="block text-xs font-semibold text-slate-300 mb-1">Qual é a sua principal dúvida ou interesse?</label>
+              <textarea id="lead-message" name="message" rows="3" placeholder="Ex: Gostaria de saber mais sobre as automações..."
+                class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-brand-500 text-sm"></textarea>
+            </div>
+
+            <button type="submit" id="submit-btn"
+              class="w-full bg-brand-600 hover:bg-brand-500 text-white font-bold py-3.5 px-6 rounded-xl transition duration-200 flex items-center justify-center gap-2 text-sm shadow-lg shadow-brand-600/30">
+              <span id="btn-text">Enviar Dados de Contato</span>
+              <svg id="btn-spinner" class="hidden animate-spin h-4 w-4 text-white" fill="none" viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
+              </svg>
+            </button>
+
+            <!-- Mensagem de Sucesso / Feedback -->
+            <div id="form-feedback" class="hidden p-4 rounded-xl text-xs text-center"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================== -->
+  <!-- BLOCO 15: RODAPÉ INSTITUCIONAL (LINKS E DIREITOS AUTORAIS)    -->
+  <!-- ============================================================== -->
+  <footer class="bg-slate-950 text-slate-500 text-xs py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 text-center space-y-4">
+      <div class="flex items-center justify-center gap-2 font-bold text-slate-300">
+        <!-- [COLE O NOME DA SUA EMPRESA ABAIXO] -->
+        <span>Sua Empresa ou Escola SINC</span>
+      </div>
+
+      <!-- [COLE O TEXTO DO SEU CNPJ OU INFORMAÇÕES FISCAIS ABAIXO] -->
+      <p class="max-w-md mx-auto text-slate-500">
+        CNPJ: 00.000.000/0001-00 • Todos os direitos reservados.
+      </p>
+
+      <!-- Links Institucionais -->
+      <div class="flex flex-wrap items-center justify-center gap-6 text-slate-400">
+        <a href="#inicio" class="hover:text-white transition">Início</a>
+        <a href="#oferta" class="hover:text-white transition">Matrícula</a>
+        <a href="#contato" class="hover:text-white transition">Fale Conosco</a>
+        <a href="javascript:alert('Termos de Uso: Todos os conteúdos disponibilizados são protegidos por direitos autorais.');" class="hover:text-white transition">Termos de Uso</a>
+        <a href="javascript:alert('Política de Privacidade: Seus dados estão seguros e não são compartilhados com terceiros.');" class="hover:text-white transition">Privacidade</a>
+      </div>
+
+      <p class="pt-6 border-t border-slate-900 text-slate-600">
+        Este site não possui vínculo institucional direto com Meta, Google ou WhatsApp. Todas as marcas pertencem aos seus respectivos proprietários.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ============================================================== -->
+  <!-- SCRIPTS DE COMPORTAMENTO INTERATIVO & INTEGRAÇÃO DE WEBHOOK    -->
+  <!-- ============================================================== -->
+  <script>
+    // =========================================================================
+    // DICA PARA O ALUNO: COLE O LINK DO SEU WEBHOOK NA VARIÁVEL ABAIXO
+    // Se você não tiver um webhook ainda, pode deixar como está para testar!
+    // =========================================================================
+    const CONFIG = {
+      // Exemplo: 'https://seu-n8n.com/webhook/captura-aluno'
+      webhookUrl: "https://httpbin.org/post"
+    };
+
+    // 1. Script do FAQ Acordeão (Abre e fecha as perguntas com clique)
+    document.querySelectorAll('.faq-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const answer = button.nextElementSibling;
+        const icon = button.querySelector('.faq-icon');
+        const isOpen = !answer.classList.contains('hidden');
+
+        // Fecha todos os outros abertos para manter a página organizada
+        document.querySelectorAll('.faq-answer').forEach(el => el.classList.add('hidden'));
+        document.querySelectorAll('.faq-icon').forEach(el => el.textContent = '+');
+
+        // Alterna o item atual
+        if (!isOpen) {
+          answer.classList.remove('hidden');
+          icon.textContent = '−';
+        }
+      });
+    });
+
+    // 2. Script de Envio do Formulário de Contato via Webhook
+    const form = document.getElementById('lead-form');
+    const submitBtn = document.getElementById('submit-btn');
+    const btnText = document.getElementById('btn-text');
+    const btnSpinner = document.getElementById('btn-spinner');
+    const feedback = document.getElementById('form-feedback');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      // Ativa estado de carregamento
+      submitBtn.disabled = true;
+      btnSpinner.classList.remove('hidden');
+      btnText.textContent = "Enviando dados...";
+      feedback.classList.add('hidden');
+
+      const payload = {
+        nome: document.getElementById('lead-name').value.trim(),
+        email: document.getElementById('lead-email').value.trim(),
+        telefone: document.getElementById('lead-phone').value.trim(),
+        mensagem: document.getElementById('lead-message').value.trim(),
+        origem: window.location.href,
+        data_envio: new Date().toISOString()
+      };
+
+      try {
+        const response = await fetch(CONFIG.webhookUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(payload)
+        });
+
+        // Feedback positivo
+        feedback.className = "p-4 rounded-xl text-xs text-center bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 block";
+        feedback.textContent = "✓ Dados recebidos com sucesso! Entraremos em contato em breve.";
+        form.reset();
+      } catch (err) {
+        // Feedback em caso de falha de conexão
+        console.warn('Aviso no envio do webhook:', err);
+        feedback.className = "p-4 rounded-xl text-xs text-center bg-amber-500/20 text-amber-300 border border-amber-500/40 block";
+        feedback.textContent = "Mensagem registrada! Se demorarmos a responder, você também pode nos chamar diretamente pelo WhatsApp.";
+      } finally {
+        submitBtn.disabled = false;
+        btnSpinner.classList.add('hidden');
+        btnText.textContent = "Enviar Dados de Contato";
+      }
+    });
+  </script>
+</body>
+
+</html>
