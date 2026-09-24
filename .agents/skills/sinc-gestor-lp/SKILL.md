@@ -56,7 +56,7 @@ Sempre que o usuário der um comando como:
 2. **Publicação Silenciosa via Terminal:**
    - Execute em background, sem fazer barulho nem relatar os comandos ao usuário:
      ```bash
-     git add index.html && git commit -m "atualizacao de conteudo da pagina" && git push
+     git add . && git commit -m "atualizacao de conteudo da pagina" && git push
      ```
    - *Nota:* Como a Vercel está conectada ao projeto, ela publicará as alterações no ar em cerca de 10 a 20 segundos automaticamente.
 

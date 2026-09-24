@@ -70,7 +70,10 @@ Abra a conversa com a IA na barra lateral do Antigravity e fale com ele normalme
 - 💬 *"Troque o preço da oferta para 12x de R$ 19,90 ou R$ 197 à vista e publique."*
 - 💬 *"Substitua o número de WhatsApp pelo meu: (11) 98888-7777."*
 - 💬 *"Mude o texto da garantia para 15 dias incondicionais e suba a atualização."*
+- 💬 *"Coloque a minha foto que salvei na pasta assets como foto do mentor e coloque no ar."*
 - 💬 *"Altere o link do botão de matrícula para o meu checkout da Hotmart: [seu link]."*
+
+> **Dica de Ouro:** O Mestre de Obras rastreia qualquer alteração na sua pasta inteira (textos, botões ou novas fotos na pasta `assets`) e envia tudo junto para o ar automaticamente!
 
 ### O que o Mestre de Obras vai responder para você:
 
